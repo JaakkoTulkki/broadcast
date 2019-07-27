@@ -11,3 +11,5 @@ client.onmessage = (msg) => {
   console.log(`second received ${msg.msg}`);
 };
 
+window.parent.postMessage('hello middle from the second.js', window.location.origin);
+window.top.postMessage('hello top from the second.js', window.location.origin);

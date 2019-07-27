@@ -15,4 +15,7 @@ channel.addEventListener('message', function (msg) {
   console.log(`this is message listener: ${msg.msg}`)
 });
 
+window.addEventListener('message', (event) => {
+  console.log(`FIRST JS received this postmessage: ${event.data}, ${event.origin}`);
+})
 

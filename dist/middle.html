@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+middle
+<script>
+    window.middle = 'this is the middle';
+    window.addEventListener('message', function (event) {
+      console.log(`middle.html ${event.data}`);
+    })
+</script>
+<iframe src="second.html"></iframe>
+</body>
+</html>
