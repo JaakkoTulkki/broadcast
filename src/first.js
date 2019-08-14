@@ -9,7 +9,7 @@ channel.onmessage = msg => {
     });
     client.close();
   }
-}
+};
 
 channel.addEventListener('message', function (msg) {
   console.log(`this is message listener: ${msg.msg}`)
@@ -17,5 +17,4 @@ channel.addEventListener('message', function (msg) {
 
 window.addEventListener('message', (event) => {
   console.log(`FIRST JS received this postmessage: ${event.data}, ${event.origin}`);
-})
-
+});

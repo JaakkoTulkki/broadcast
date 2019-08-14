@@ -6,7 +6,17 @@
 </head>
 <body>
 First
-<iframe src="middle.html"></iframe>
+<button onclick="clicked()" id="first-btn">Click me</button>
+
+<div id="content"></div>
+
+<iframe src="middle.html" name="middle"></iframe>
 <script src="first.js"></script>
+<script>
+    function clicked() {
+      const elem = document.getElementById('content');
+      elem.innerHTML = 'Hello world';
+    }
+</script>
 </body>
 </html>

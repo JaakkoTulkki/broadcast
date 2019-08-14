@@ -6,6 +6,15 @@
 </head>
 <body>
 Second
+
+<button id="second-iframe-btn" onclick="clickme()">Click me</button>
+<div id="second-iframe-content"></div>
+
 <script src="second.js"></script>
+<script>
+    function clickme() {
+      document.getElementById('second-iframe-content').innerText = 'Second text';
+    }
+</script>
 </body>
 </html>
